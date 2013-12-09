@@ -1,0 +1,25 @@
+ <div id="paleta" class="tools clearfix">
+    <a href="#colors_sketch" data-download="png" style="float: right; width: 100px;">Download</a>
+
+    </div>
+
+<canvas id="colors_sketch" class="all clearfix" widht="100%" height="480"></canvas>
+<script>
+var fondo = "url(images/video/video-1.png)";    
+$("#colors_sketch").css( "background-image", fondo );
+
+$(function() {
+                                  
+                    
+                                    $('#colors_sketch').sketch();
+                                    
+                                    $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
+                                    $('#paleta').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'>"+this +"</a> ");
+                                    });
+                                        
+                                    $.each([3, 5, 10, 15], function() {
+                                            $('#paleta').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
+                                    });
+                            });
+                       
+</script>

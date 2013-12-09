@@ -1,0 +1,127 @@
+                    <h2 class="titulo-principal">Dibujemos el Cuento</h2>
+
+                    <ul class="nav nav-tabs" id="myTab">
+                      <li class="active"><a href="#mywork" data-toggle="tab">Mis Tareas</a></li>
+                      <li ><a href="#timeline" data-toggle="tab">Historial Asignaciones</a></li>
+                      <li ><a href="#subir" data-toggle="tab">Subir Nueva</a></li>
+
+                     
+                    </ul>
+                    
+                    <div class="tab-content">
+                    <div class="tab-pane active" id="mywork">
+                            <article class="prettyprint">
+                                <header class="clearfix">
+                                <h3 class="titulo-cuentos">La tos de la muñeca</h3>
+                                <small class="btn  btn-default btn-xs color-blanco " id="cuento-1">Vista Previa</small>&nbsp;
+                                <small class="btn  btn-default btn-xs color-blanco " id="asignar-cuento-1">Asignar</small>
+                                </header>
+                                
+                            </article>
+                            <article class="prettyprint">
+                                <header class="clearfix">
+                                <h3 class="titulo-cuentos">La tos de la muñeca</h3>
+                                <small class="btn  btn-default btn-xs color-blanco " id="cuento-1">Vista Previa</small>&nbsp;
+                                <small class="btn  btn-default btn-xs color-blanco " id="asignar-cuento-1">Asignar</small>
+                                </header>
+                                
+                            </article>
+                            <article class="prettyprint">
+                                <header class="clearfix">
+                                <h3 class="titulo-cuentos">La tos de la muñeca</h3>
+                                <small class="btn  btn-default btn-xs color-blanco " id="cuento-1">Vista Previa</small>&nbsp;
+                                <small class="btn  btn-default btn-xs color-blanco " id="asignar-cuento-1">Asignar</small>
+                                </header>
+                                
+                            </article>
+                                                
+                          </div>
+                      <div class="tab-pane " id="timeline">
+                            <article class="prettyprint">
+                                <header class="clearfix">
+                                     <small class="text-muted pull-left">Fecha: 10/10/2013</small>
+                                     <small class="text-muted pull-right">Nuestra Señora del Loreto, Lo Barnechea</small>
+                                </header>
+                                <small >La Tarea <a href="#" class="">"Encontrando a Nemo"</a> debe realizarla el curso                                                     <a href="#" class="">Primero A</a> y se entrega el<a href="#" class=""> 20/10/2013</a></small> 
+                                <footer class="fart">
+                                    <small class="btn  btn-default btn-xs color-blanco " id="#">Editar</small>&nbsp;
+                                    <small class="btn  btn-default btn-xs color-blanco " id="#">Eliminar</small>
+                                </footer>
+                            </article>
+                            <article class="prettyprint">
+                                <header class="clearfix">
+                                     <small class="text-muted pull-left">Fecha: 08/10/2013</small>
+                                     <small class="text-muted pull-right">Colegio San Jorge, Las Condes</small>
+                                </header>
+                                <small >La Tarea <a href="#" class="">"Encontrando a Nemo"</a> debe realizarla el curso                                                     <a href="#" class="">Primero A</a> y se entrega el<a href="#" class=""> 20/10/2013</a></small> 
+                                <footer class="fart">
+                                    <small class="btn  btn-default btn-xs color-blanco " id="#">Editar</small>&nbsp;
+                                    <small class="btn  btn-default btn-xs color-blanco " id="#">Eliminar</small>
+                                </footer>
+                          </article>
+                            <article class="prettyprint">
+                                <header class="clearfix">
+                                    <small class="text-muted pull-left">Fecha: 03/10/2013</small>
+                                    <small class="text-muted pull-right">Colegio Nuestra Señora del Loreto, Vitacura</small>
+                                </header>
+                                <small >La Tarea <a href="#" class="">"Encontrando a Nemo"</a> debe realizarla el curso                                                         <a href="#" class="">Primero A</a> y se entrega el<a href="#" class=""> 20/10/2013</a></small> 
+                                <footer class="fart">
+                                    <small class="btn  btn-default btn-xs color-blanco " id="#">Editar</small>&nbsp;
+                                    <small class="btn  btn-default btn-xs color-blanco " id="#">Eliminar</small>
+                                </footer>
+                          </article>
+                                
+                      </div><!--timeline-->
+                        
+                          
+                        <div class="tab-pane" id="subir">
+                            <article class="prettyprint">
+                                <header class="clearfix">
+                                <h3 class="titulo-cuentos">Subir nuevo material</h3>
+                                
+                                </header>
+                                
+                            </article>
+                            
+                          </div>
+                    </div>
+
+
+
+
+                    
+                    
+                    <div class="clearfloat"></div>
+                         <div class="pagination clearfix all text-center">
+                          <ul class="">
+                            <li class="previous">
+                              <a href="#"><<</a>
+                            </li>
+                            <li class="active"><a href="#fakelink">1</a></li>
+                            <li class=""><a href="#fakelink">2</a></li>
+                            <li class=""><a href="#fakelink">3</a></li>
+                            <li class=""><a href="#fakelink">4</a></li>
+                            <li><a href="#fakelink">..</a></li>
+                            <li class="next">
+                              <a href="#" >>></a>
+                            </li>
+                          </ul>
+                    </div>
+
+                    <script>
+                    $(document).ready(function(){ 
+                         $("#cuento-1").click(function(){
+                                $("#contentapp").load("contenido/dibuja-historia-app.html");
+                                $('.menu-p').removeClass('active-menu');
+                                $("#dibuja-historia").toggleClass('active-menu');
+                
+                          });
+                        $("#asignar-cuento-1").click(function(){
+                                $("#contentapp").load("contenido/asignar-dibuja-historia-app.html");
+                                $('.menu-p').removeClass('active-menu');
+                                $("#dibuja-historia").toggleClass('active-menu');
+                                
+                
+                          });
+                    });
+                    </script>

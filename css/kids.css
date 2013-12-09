@@ -1,0 +1,171 @@
+.fondoapp{
+    background-image:url("../images/kids/fondo.png");
+    background-repeat:no-repeat;
+    height:650px;
+    position:relative;
+}
+
+#nologo{
+ height:0;   
+}
+#contentappkids{
+    height:650px;
+    position:relative;
+}
+#logo-nino{
+  left: 40px;
+    position: absolute;
+    top: 0;
+    z-index: 9999999;
+}
+#robot-salir{
+ position:absolute;
+    left:0;
+    top:20px;
+}
+#robot-salir-over{
+background-color: red;
+    height: 191px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    width: 155px;
+    z-index: 99999999;
+}
+
+
+#leamos{
+background-color: yellow;
+    height: 70px;
+    position: absolute;
+    right: 194px;
+    top: 194px;
+    width: 200px;
+   
+}
+#colors_sketch{
+ /*border:2px solid #16A085;*/
+    background-color:white;
+    border:2px solid grey;
+    -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+    height:400px;
+}
+.colore-paleta{
+    margin: 5px 1%;
+    width: 6%;  
+}
+
+#continuaelcuento{
+ background-color: #FFFF00;
+    height: 70px;
+    left: 328px;
+    position: absolute;
+    top: 420px;
+    width: 200px; 
+    
+}
+#dibujalahistoria{
+    background-color: #FFFF00;
+    bottom: 128px;
+    height: 70px;
+    position: absolute;
+    right: 396px;
+    width: 200px;
+ 
+}
+#robot{
+    background-color: #800080;
+    height: 103px;
+    left: 372px;
+    position: absolute;
+    top: 201px;
+    width: 85px;
+}
+#maquina{
+    background-color: #FF0000;
+    height: 70px;
+    position: absolute;
+    right: 519px;
+    top: 225px;
+    width: 70px;
+ 
+}
+#camara{
+    background-color: #FF0000;
+    height: 116px;
+    position: absolute;
+    right: 380px;
+    top: 409px;
+    width: 70px;
+ 
+}
+#lampara{
+    background-color: #FF0000;
+    bottom: 150px;
+    height: 59px;
+    position: absolute;
+    right: 251px;
+    width: 72px;
+ 
+}
+#cartel{
+    background-color: #008000;
+    height: 70px;
+    left: 43px;
+    position: absolute;
+    top: 103px;
+    width: 246px;
+ 
+}
+#historia-a-dibujar{
+ position:absolute;
+ width:40%;
+    left:30%;
+    top:10px;
+    background-color:white;
+    max-height:600px;
+    overflow:auto;
+}
+#vamos-historia-a-dibujar{
+    position:absolute;
+    width:40%;
+    left:30%;
+    top:500px;
+    /*background-color:white;  */
+}
+#historia-a-dibujar-app{
+    position:absolute;
+    width:70%;
+    left:15%;
+    top:10px;
+    background-color:white;
+    display:none;
+    border:2px solid grey;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.titulo-historia{
+ background-color: #D3D3D3;
+    border-radius: 9px;
+    margin-top: 0;
+    padding: 10px 0;
+    width: auto;  
+}
+
+    .transparent_class {
+    filter:alpha(opacity=50); /* ie */
+    -moz-opacity:0.5; /* old mozilla browser like netscape */
+    -khtml-opacity: 0.5; /* for really really old safari */
+    opacity: 0.5; /* css standard, currently it works in most modern browsers like firefox, */
+    }
+
+ .transparent_class_2
+    filter:alpha(opacity=80); /* ie */
+    -moz-opacity:0.8; /* old mozilla browser like netscape */
+    -khtml-opacity: 0.8; /* for really really old safari */
+    opacity: 0.8; /* css standard, currently it works in most modern browsers like firefox, */
+    }
+
