@@ -101,10 +101,12 @@
           });
           
           $("#leamos").click(function(){
+                $("#logo-nino").css("display","none");
                 $(".contenido").load("kids/leemos-juntos.html");
-                $("#contentappkids").css("background-image","url('images/kids/fondo.png')");              
+
           });
           $("#continuaelcuento").click(function(){
+                $("#logo-nino").css("display","none");
                 $(".contenido").load("kids/continua-historia.html");
                 $("#contentappkids").css("background-image","url('images/kids/fondo.png')");              
           });

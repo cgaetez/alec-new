@@ -1,5 +1,5 @@
 .fondoapp{
-    background-image:url("../images/kids/fondo.png");
+    background-image:url("../images/kids/casa.png");
     background-repeat:no-repeat;
     height:650px;
     position:relative;
@@ -51,17 +51,17 @@ border-radius: 5px;
 }
 
 #continuaelcuento{
- background-color: #FFFF00;
+   background-color: #FFFF00;
     height: 70px;
-    left: 328px;
+    left: 368px;
     position: absolute;
-    top: 420px;
-    width: 200px; 
+    top: 328px;
+    width: 200px;
     
 }
 #dibujalahistoria{
-    background-color: #FFFF00;
-    bottom: 128px;
+     background-color: #FFFF00;
+    bottom: 105px;
     height: 70px;
     position: absolute;
     right: 396px;
@@ -93,20 +93,20 @@ left:0;
  
 }
 #camara{
-    background-color: #FF0000;
+      background-color: #FF0000;
     height: 116px;
     position: absolute;
     right: 380px;
-    top: 409px;
+    top: 329px;
     width: 70px;
  
 }
 #lampara{
     background-color: #FF0000;
-    bottom: 150px;
+    bottom: 114px;
     height: 59px;
     position: absolute;
-    right: 251px;
+    right: 281px;
     width: 72px;
  
 }
@@ -115,7 +115,7 @@ left:0;
     height: 70px;
     left: 43px;
     position: absolute;
-    top: 103px;
+    top: 92px;
     width: 246px;
     z-index:9999999;
  

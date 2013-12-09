@@ -1,3 +1,66 @@
                 <section class="col-md-12" id="contentappkids">
-                    <img src="images/kids/objetos-continua-el-video.png" width="100%"/>
+                    <img src="images/kids/alec-salir.png" id="robot-salir"/>
+                    <img src="images/kids/objetos-continua-el-video" id="fondo-dibuja" />
+                    <article class="prettyprint text-center transparent_class_2" id="historia-a-dibujar">
+                        <header class="clearfix">
+                            <h2>La tos de la muñeca</h2> 
+                        </header>
+                        <section class="cuento" id="page-1">
+                        <p>Como mi linda muñeca tiene un poquito de tos,</p>
+                        <p>yo, que en seguida me aflijo , hice llamar al doctor.</p>
+                        <p>Serio y callado a la enferma largo tiempo examinó,</p>
+                        <p>ya poniéndole el termómetro, ya mirando su reloj.</p>
+                        <p>La muñeca estaba pálida, yo temblaba de emoción,</p>
+                        <p>y al fin el médico dijo, bajando un poco la voz:</p>
+                        <p>–Esta tos sólo se cura con un caramelo o dos.</p>
+                        </section>
+                        <a href="" >
+                            <small >Autor: Germán Berdiales</small>                                         
+                        </a>
+                    </article>
+                    <article class="text-center" id="vamos-historia-a-dibujar">
+                        <small class="btn  btn-default btn-xs color-blanco " id="letsdraw">Vamos a Dibujar</small>
+                    </article>
+                    <article class="prettyprint text-center" id="historia-a-dibujar-app">
+                    <h3 class="titulo-historia">Dibuja a la muñeca</h3>
+                    <div id="paleta" class="tools clearfix">
+                    
+
+                    </div>
+                        
+                        <canvas id="colors_sketch" class="all clearfix" height="450"></canvas>
+                        <a href="#colors_sketch" data-download="png" style="float: center; width: 100px;">Siguiente</a>
+                        <script type="text/javascript">
+                            $("#robot-salir").click(function(){
+                            //alert("pepe");
+                                
+                                window.location.href=window.location.href;                   
+                            });
+                            
+                         $("#letsdraw").click(function(){
+                            //alert("pepe");
+                       
+                            $("#historia-a-dibujar").css("display","none");
+                            $("#vamos-historia-a-dibujar").css("display","none"); 
+                             
+                            $("#historia-a-dibujar-app").css("display","block"); 
+                               $('#colors_sketch').sketch();
+                        
+                        $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
+                        $short = this.substring(1,4);
+                        $('#paleta').append("<a href='#colors_sketch' data-color='" + this + "'><img class='colore-paleta' src='images/kids/paleta-"+$short+".png' /></a> ");
+                      
+                        });
+                            
+                        $.each([3, 5, 10], function() {
+                          $('#paleta').append("<a href='#colors_sketch' data-size='" + this + "'><img class='colore-paleta' src='images/kids/paleta-"+this+".png' /></a> ");
+                        });
+                        });
+                            
+                        $(function() {
+                      
+                        });
+                        </script>
+</article>  
+                    
                 </section>
