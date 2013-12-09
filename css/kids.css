@@ -22,16 +22,9 @@
  position:absolute;
     left:0;
     top:20px;
+    z-index:9999999;
 }
-#robot-salir-over{
-background-color: red;
-    height: 191px;
-    left: 0;
-    position: absolute;
-    top: 18px;
-    width: 155px;
-    z-index: 99999999;
-}
+
 
 
 #leamos{
@@ -75,6 +68,13 @@ border-radius: 5px;
     width: 200px;
  
 }
+#fondo-dibuja{
+        position: absolute;
+left:0;
+    top:0;
+    width:1170px;
+    
+}
 #robot{
     background-color: #800080;
     height: 103px;
@@ -117,6 +117,7 @@ border-radius: 5px;
     position: absolute;
     top: 103px;
     width: 246px;
+    z-index:9999999;
  
 }
 #historia-a-dibujar{

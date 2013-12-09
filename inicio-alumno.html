@@ -46,11 +46,10 @@
 
                     </nav>
                         </div>  
-                    <a href="inicio-alumno.html" id="logo-nino">
-                        <h1 class="demo-logo clearfix" >
+                    <h1 class="demo-logo clearfix" id="logo-nino">
                         <img src="images/logo_ninos.png" alt="..." class="">
                         </h1>
-                    </a>
+                   
                     
                 </header>
             </div><!--row-->
@@ -81,7 +80,6 @@
     <!-- Load JS here for greater good =============================-->
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-select.js"></script>
     <script src="js/bootstrap-switch.js"></script>
@@ -98,7 +96,9 @@
     <script type="text/javascript" defer>
         $("#contentappkids").css("background-image","url('images/kids/casa.png')");
         $(document).ready(function(){   
-          
+          $("#cartel").click(function(){
+                window.location.href=window.location.href;                   
+          });
           
           $("#leamos").click(function(){
                 $(".contenido").load("kids/leemos-juntos.html");
@@ -112,7 +112,8 @@
                 $("#logo-nino").css("display","none");
                 $("#contentappkids").css("background-image","url('images/kids/fondo.png')");
                 $(".contenido").load("kids/dibujamos-historia.html");
-              
+          
+          
                
 
           });
