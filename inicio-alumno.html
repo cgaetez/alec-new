@@ -58,13 +58,11 @@
                 <section class="col-md-12" id="contentappkids">
                     <div class="alec"></div>
                     <div class="atril"></div>
-                 <div class="lamp"></div><!--
-                    <div class="clac"></div>
-                    <div class="came"></div>-->
-                    <div id="leamos" class="transparent_class"></div> 
-                    <div id="continuaelcuento" class="transparent_class"></div>
-                    <div id="dibujalahistoria" class="transparent_class"></div>
-                    <div id="cartel" class="transparent_class"></div>
+                    <div class="lamp"></div> 
+                    <div class="leamos"></div>
+                    <div class="continuaelcuento"></div>
+                    <div class="dibujalahistoria"></div>
+                    <div id="cartel"></div>
                 </section>
                 
 
@@ -96,10 +94,19 @@
     <script type="text/javascript" defer>
         /*$("#contentappkids").css("background-image","url('images/kids/casa.jpg')");*/
         $(document).ready(function(){   
-          $("#cartel").click(function(){
-                window.location.href=window.location.href;                   
-          });
-         
+        $("#cartel").click(function(){
+            window.location.href=window.location.href;                   
+        });
+            
+        $(".leamos").hover(function(){
+            $(this).toggleClass("leamosmove");
+        }); 
+        $(".continuaelcuento").hover(function(){
+            $(this).toggleClass("continuaelcuentomove");
+        }); 
+        $(".dibujalahistoria").hover(function(){
+            $(this).toggleClass("dibujalahistoriamove");
+        }); 
         $(".alec").hover(function(){
             $(this).toggleClass("alecmove");
         });
@@ -109,30 +116,19 @@
         $(".lamp").hover(function(){
             $(this).toggleClass("lampmove");
         });
-        $(".clac").hover(function(){
-            $(this).toggleClass("clacmove");
+        //go to app
+        $(".leamos").click(function(){
+            $("#logo-nino").css("display","none");
+            $(".contenido").load("kids/leemos-juntos.html");
         });
-        $(".came").hover(function(){
-            $(this).toggleClass("camemove");
+        $(".continuaelcuento").click(function(){
+            $("#logo-nino").css("display","none");
+            $(".contenido").load("kids/continua-historia.html");
         });
-          
-          $("#leamos").click(function(){
-                $("#logo-nino").css("display","none");
-                $(".contenido").load("kids/leemos-juntos.html");
-
-          });
-          $("#continuaelcuento").click(function(){
-                $("#logo-nino").css("display","none");
-                $(".contenido").load("kids/continua-historia.html");
-          });
-          $("#dibujalahistoria").click(function(){
-                $("#logo-nino").css("display","none");
-                $(".contenido").load("kids/dibujamos-historia.html");
-
-          
-               
-
-          });
+        $(".dibujalahistoria").click(function(){
+            $("#logo-nino").css("display","none");
+            $(".contenido").load("kids/dibujamos-historia.html");
+        });
            
          
             

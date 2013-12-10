@@ -144,101 +144,151 @@
    from { background-position:    0px 0px; }
      to { background-position: 0px -7488px; }
 }
-/*ATRIL*/
-/*Claqueta*//*
-.clac{
-    cursor:pointer;
-    background-image: url("../images/kids/sprites/clac.png");
-    height: 45px;
-    right: 461px;
-    position: absolute;
-    top: 260px;
-    width: 45px;
-    z-index: 99999999;
     
-.clacmove{
-     animation: 1s steps(12, end) 0s normal none infinite playclac;   
-     -webkit-animation: playclac 1s steps(12) infinite;
-       -moz-animation:  playclac 1s steps(12) infinite;
-        -ms-animation:  playclac 1s steps(12) infinite;
-         -o-animation:  playclac 1s steps(12) infinite;
-            animation:  playclac 1s steps(12) infinite;
-}
-
-@-webkit-keyframes playclac {
-   from { background-position:    0px 0px; }
-     to { background-position: 0px -650px; }
-}
-
-@-moz-keyframes playclac {
-   from { background-position:    0px 0px; }
-     to { background-position: 0px -650px; }
-}
-
-@-ms-keyframes playclac {
-   from { background-position:    0px 0px; }
-     to { background-position: 0px -650px; }
-}
-
-@-o-keyframes playclac {
-   from { background-position:    0px 0px; }
-     to { background-position: 0px -650px; }
-}
-
-@keyframes playclac {
-   from { background-position:    0px 0px; }
-     to { background-position: 0px -650px; }
-}
-/*CLAC*/
-
-/*CAM*//*
-.came{
-    cursor:pointer;
-    background-image: url("../images/kids/sprites/cam.png");
-    height: 120px;
-    left: 361px;
+/*LEEMOS*/
+.leamos{
+    background-image: url("../images/kids/sprites/leamos.png");
+    cursor: pointer;
+    height: 95px;
     position: absolute;
-    top: 160px;
-    width: 72px;
+    right: 300px;
+    top: 135px;
+    width: 184px;
     z-index: 99999999;
     
 
 }
-.camemove{
-     animation: 0.8s steps(13, end) 0s normal none infinite playcam;   
-     -webkit-animation: playcam .8s steps(13) infinite;
-       -moz-animation:  playcam .8s steps(13) infinite;
-        -ms-animation:  playcam .8s steps(13) infinite;
-         -o-animation:  playcam .8s steps(13) infinite;
-            animation:  playcam .8s steps(13) infinite;
+.leamosmove{
+     animation: 2s steps(29, end) 0s normal none infinite playleamos;   
+     -webkit-animation: playleamos 2s steps(29) infinite;
+       -moz-animation:  playleamos 2s steps(29) infinite;
+        -ms-animation:  playleamos 2s steps(29) infinite;
+         -o-animation:  playleamos 2s steps(29) infinite;
+            animation:  playleamos 2s steps(29) infinite;
 }
 
-@-webkit-keyframes playcam {
+@-webkit-keyframes playleamos {
    from { background-position:    0px 0px; }
-     to { background-position: 0px -1572px; }
+     to { background-position: 0px -2755px; }
 }
 
-@-moz-keyframes playcam {
+@-moz-keyframes playleamos {
    from { background-position:    0px 0px; }
-     to { background-position: 0px -1572px; }
+     to { background-position: 0px -2755px; }
 }
 
-@-ms-keyframes playcam {
+@-ms-keyframes playleamos {
    from { background-position:    0px 0px; }
-     to { background-position: 0px -1572px; }
+     to { background-position: 0px -2755px; }
 }
 
-@-o-keyframes playcam {
+@-o-keyframes playleamos {
    from { background-position:    0px 0px; }
-     to { background-position: 0px -1572px; }
+     to { background-position: 0px -2755px; }
 }
 
-@keyframes playcam {
+@keyframes playleamos {
    from { background-position:    0px 0px; }
-     to { background-position: 0px -1572px; }
+     to { background-position: 0px -2755px; }
 }
-/*ALEC*/
+
+/*Dibujemos*/
+          
+.dibujalahistoria{
+    background-image: url("../images/kids/sprites/leamos.png");
+    bottom: 123px;
+    cursor: pointer;
+    height: 95px;
+    position: absolute;
+    right: 481px;
+    width: 184px;
+    z-index: 99999999;
     
+
+}
+.dibujalahistoriamove{
+     animation: 2s steps(29, end) 0s normal none infinite playdibujalahistoria;   
+     -webkit-animation: playdibujalahistoria 2s steps(29) infinite;
+       -moz-animation:  playdibujalahistoria 2s steps(29) infinite;
+        -ms-animation:  playdibujalahistoria 2s steps(29) infinite;
+         -o-animation:  playdibujalahistoria 2s steps(29) infinite;
+            animation:  playdibujalahistoria 2s steps(29) infinite;
+}
+
+@-webkit-keyframes playdibujalahistoria {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2755px; }
+}
+
+@-moz-keyframes playdibujalahistoria {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2755px; }
+}
+
+@-ms-keyframes playdibujalahistoria {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2755px; }
+}
+
+@-o-keyframes playdibujalahistoria {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2755px; }
+}
+
+@keyframes playdibujalahistoria {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2755px; }
+}
+
+/*continuaelcuento*/
+
+.continuaelcuento{
+    background-image: url("../images/kids/sprites/leamos.png");
+    bottom: 258px;
+    cursor: pointer;
+    height: 95px;
+    left: 391px;
+    position: absolute;
+    width: 184px;
+    z-index: 99999999;
+    
+
+}
+.continuaelcuentomove{
+     animation: 2s steps(29, end) 0s normal none infinite playcontinuaelcuento;   
+     -webkit-animation: playcontinuaelcuento 2s steps(29) infinite;
+       -moz-animation:  playcontinuaelcuento 2s steps(29) infinite;
+        -ms-animation:  playcontinuaelcuento 2s steps(29) infinite;
+         -o-animation:  playcontinuaelcuento 2s steps(29) infinite;
+            animation:  playcontinuaelcuento 2s steps(29) infinite;
+}
+
+@-webkit-keyframes playcontinuaelcuento {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2755px; }
+}
+
+@-moz-keyframes playcontinuaelcuento {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2755px; }
+}
+
+@-ms-keyframes playcontinuaelcuento {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2755px; }
+}
+
+@-o-keyframes playcontinuaelcuento {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2755px; }
+}
+
+@keyframes playcontinuaelcuento {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2755px; }
+}
+
+
     
 #nologo{
  height:0;   
@@ -266,16 +316,7 @@
 
 
 
-#leamos{
-background-color: yellow;
-    height: 70px;
-    position: absolute;
-    right: 194px;
-    top: 194px;
-    width: 200px;
-   cursor:hand;
-    cursor:pointer;
-}
+
 #colors_sketch{
  /*border:2px solid #16A085;*/
     background-color:white;
@@ -290,26 +331,7 @@ border-radius: 5px;
     width: 6%;  
 }
 
-#continuaelcuento{
-   background-color: #FFFF00;
-    height: 70px;
-    left: 368px;
-    position: absolute;
-    top: 328px;
-    width: 200px;
-    cursor:hand;
-    cursor:pointer;
-}
-#dibujalahistoria{
-     background-color: #FFFF00;
-    bottom: 105px;
-    height: 70px;
-    position: absolute;
-    right: 396px;
-    width: 200px;
-    cursor:hand;
-    cursor:pointer;
-}
+
 #fondo-dibuja{
         position: absolute;
 left:0;
@@ -318,39 +340,7 @@ left:0;
     
 }
 
-#maquina{
-    background-color: #FF0000;
-    height: 70px;
-    position: absolute;
-    right: 519px;
-    top: 225px;
-    width: 70px;
-    cursor:hand;
-    cursor:pointer;
- 
-}
-#camara{
-      background-color: #FF0000;
-    height: 116px;
-    position: absolute;
-    right: 380px;
-    top: 329px;
-    width: 70px;
-    cursor:hand;
-    cursor:pointer;
- 
-}
-#lampara{
-    background-color: #FF0000;
-    bottom: 114px;
-    height: 59px;
-    position: absolute;
-    right: 281px;
-    width: 72px;
-    cursor:hand;
-    cursor:pointer;
- 
-}
+
 #cartel{
     height: 70px;
     left: 24px;
@@ -362,22 +352,7 @@ left:0;
     cursor:pointer;
  
 }
-#historia-a-dibujar{
- position:absolute;
- width:40%;
-    left:30%;
-    top:10px;
-    background-color:white;
-    max-height:600px;
-    overflow:auto;
-}
-#vamos-historia-a-dibujar{
-    position:absolute;
-    width:40%;
-    left:30%;
-    top:500px;
-    /*background-color:white;  */
-}
+
 #historia-a-dibujar-app{
     position:absolute;
     width:70%;
