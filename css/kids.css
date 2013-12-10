@@ -1,19 +1,93 @@
 .fondoapp{
-    background-image:url("../images/kids/casa.png");
+    background-image:url("../images/kids/casa.jpg");
     background-repeat:no-repeat;
     height:650px;
     position:relative;
 }
 
+.alec{
+    cursor:pointer;
+    background-image: url("../images/kids/sprites/alec.png");
+    height: 120px;
+    left: 361px;
+    position: absolute;
+    top: 160px;
+    width: 72px;
+    z-index: 99999999;
+    
+    -webkit-animation: stop .8s steps(13) infinite;
+       -moz-animation: stop .8s steps(13) infinite;
+        -ms-animation: stop .8s steps(13) infinite;
+         -o-animation: stop .8s steps(13) infinite;
+            animation: stop .8s steps(13) infinite;
+}
+.almove{
+     animation: 0.8s steps(13, end) 0s normal none infinite play;   
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1572px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1572px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1572px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1572px; }
+}
+
+@keyframes play {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1572px; }
+}
+
+/*
+@-webkit-keyframes stop {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px 0px; }
+}
+
+@-moz-keyframes stop {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px 0px; }
+}
+
+@-ms-keyframes stop {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px 0px; }
+}
+
+@-o-keyframes stop {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px 0px; }
+}
+
+@keyframes sto {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px 0px; }
+}
+
+*/
+
 #nologo{
  height:0;   
 }
 #contentappkids{
+    
     height:650px;
     position:relative;
 }
 #logo-nino{
-  left: 40px;
+  left: 8px;
     position: absolute;
     top: 0;
     z-index: 9999999;
@@ -23,6 +97,9 @@
     left:0;
     top:20px;
     z-index:9999999;
+    cursor:hand;
+    cursor:pointer;
+   
 }
 
 
@@ -34,7 +111,8 @@ background-color: yellow;
     right: 194px;
     top: 194px;
     width: 200px;
-   
+   cursor:hand;
+    cursor:pointer;
 }
 #colors_sketch{
  /*border:2px solid #16A085;*/
@@ -57,7 +135,8 @@ border-radius: 5px;
     position: absolute;
     top: 328px;
     width: 200px;
-    
+    cursor:hand;
+    cursor:pointer;
 }
 #dibujalahistoria{
      background-color: #FFFF00;
@@ -66,7 +145,8 @@ border-radius: 5px;
     position: absolute;
     right: 396px;
     width: 200px;
- 
+    cursor:hand;
+    cursor:pointer;
 }
 #fondo-dibuja{
         position: absolute;
@@ -75,14 +155,7 @@ left:0;
     width:1170px;
     
 }
-#robot{
-    background-color: #800080;
-    height: 103px;
-    left: 372px;
-    position: absolute;
-    top: 201px;
-    width: 85px;
-}
+
 #maquina{
     background-color: #FF0000;
     height: 70px;
@@ -90,6 +163,8 @@ left:0;
     right: 519px;
     top: 225px;
     width: 70px;
+    cursor:hand;
+    cursor:pointer;
  
 }
 #camara{
@@ -99,6 +174,8 @@ left:0;
     right: 380px;
     top: 329px;
     width: 70px;
+    cursor:hand;
+    cursor:pointer;
  
 }
 #lampara{
@@ -108,16 +185,19 @@ left:0;
     position: absolute;
     right: 281px;
     width: 72px;
+    cursor:hand;
+    cursor:pointer;
  
 }
 #cartel{
-    background-color: #008000;
     height: 70px;
-    left: 43px;
+    left: 24px;
     position: absolute;
     top: 92px;
     width: 246px;
     z-index:9999999;
+    cursor:hand;
+    cursor:pointer;
  
 }
 #historia-a-dibujar{

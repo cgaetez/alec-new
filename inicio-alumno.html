@@ -56,8 +56,9 @@
             
             <div class="row contenido fondoapp">
                 <section class="col-md-12" id="contentappkids">
-                   <div id="leamos" class="transparent_class"></div> 
-                   <div id="continuaelcuento" class="transparent_class"></div>
+                    <div class="alec"></div>
+                    <div id="leamos" class="transparent_class"></div> 
+                    <div id="continuaelcuento" class="transparent_class"></div>
                     <div id="dibujalahistoria" class="transparent_class"></div>
                     <div id="robot" class="transparent_class"></div>
                     <div id="maquina" class="transparent_class"></div>
@@ -94,11 +95,15 @@
     
       
     <script type="text/javascript" defer>
-        $("#contentappkids").css("background-image","url('images/kids/casa.png')");
+        /*$("#contentappkids").css("background-image","url('images/kids/casa.jpg')");*/
         $(document).ready(function(){   
           $("#cartel").click(function(){
                 window.location.href=window.location.href;                   
           });
+         
+        $(".alec").hover(function(){
+            $(this).toggleClass("almove");
+        })
           
           $("#leamos").click(function(){
                 $("#logo-nino").css("display","none");
@@ -108,13 +113,11 @@
           $("#continuaelcuento").click(function(){
                 $("#logo-nino").css("display","none");
                 $(".contenido").load("kids/continua-historia.html");
-                $("#contentappkids").css("background-image","url('images/kids/fondo.png')");              
           });
           $("#dibujalahistoria").click(function(){
                 $("#logo-nino").css("display","none");
-                $("#contentappkids").css("background-image","url('images/kids/fondo.png')");
                 $(".contenido").load("kids/dibujamos-historia.html");
-          
+
           
                
 
