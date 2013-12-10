@@ -195,7 +195,7 @@
 /*Dibujemos*/
           
 .dibujalahistoria{
-    background-image: url("../images/kids/sprites/leamos.png");
+    background-image: url("../images/kids/sprites/dibujar.png"); 
     bottom: 123px;
     cursor: pointer;
     height: 95px;
@@ -243,7 +243,7 @@
 /*continuaelcuento*/
 
 .continuaelcuento{
-    background-image: url("../images/kids/sprites/leamos.png");
+    background-image: url("../images/kids/sprites/video.png");
     bottom: 258px;
     cursor: pointer;
     height: 95px;
@@ -287,8 +287,53 @@
    from { background-position:    0px 0px; }
      to { background-position: 0px -2755px; }
 }
+/*camara*/
 
+.camara{
+   background-image: url("../images/kids/sprites/camara.png");
+    bottom: 237px;
+    cursor: pointer;
+    height: 134px;
+    position: absolute;
+    right: 300px;
+    width: 230px;
+    z-index: 99999999;
+}
+.camaramove{
+     animation: 1s steps(11, end) 0s normal none infinite playcamara;   
+     -webkit-animation: playcamara 1s steps(11) infinite;
+       -moz-animation:  playcamara 1s steps(11) infinite;
+        -ms-animation:  playcamara 1s steps(11) infinite;
+         -o-animation:  playcamara 1s steps(11) infinite;
+            animation:  playcamara 1s steps(11) infinite;
+}
 
+@-webkit-keyframes playcamara {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1474px; }
+}
+
+@-moz-keyframes playcamara  {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1474px; }
+}
+
+@-ms-keyframes playcamara  {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1474px; }
+}
+
+@-o-keyframes playcamara {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1474px; }
+}
+
+@keyframes playcamara  {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1474px; }
+}
+
+/*++*/
     
 #nologo{
  height:0;   
@@ -352,7 +397,15 @@ left:0;
     cursor:pointer;
  
 }
-
+#historia-a-dibujar{
+ position:absolute;
+ width:40%;
+    left:30%;
+    top:10px;
+    background-color:white;
+    max-height:600px;
+    overflow:auto;
+}
 #historia-a-dibujar-app{
     position:absolute;
     width:70%;
@@ -364,6 +417,13 @@ left:0;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+}
+#vamos-historia-a-dibujar{
+    position:absolute;
+    width:40%;
+    left:30%;
+    top:500px;
+    /*background-color:white;  */
 }
 .titulo-historia{
  background-color: #D3D3D3;
