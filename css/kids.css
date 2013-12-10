@@ -4,7 +4,7 @@
     height:650px;
     position:relative;
 }
-
+/*ALEC*/
 .alec{
     cursor:pointer;
     background-image: url("../images/kids/sprites/alec.png");
@@ -15,14 +15,15 @@
     width: 72px;
     z-index: 99999999;
     
-    -webkit-animation: stop .8s steps(13) infinite;
-       -moz-animation: stop .8s steps(13) infinite;
-        -ms-animation: stop .8s steps(13) infinite;
-         -o-animation: stop .8s steps(13) infinite;
-            animation: stop .8s steps(13) infinite;
+
 }
-.almove{
+.alecmove{
      animation: 0.8s steps(13, end) 0s normal none infinite play;   
+     -webkit-animation: play .8s steps(13) infinite;
+       -moz-animation:  play .8s steps(13) infinite;
+        -ms-animation:  play .8s steps(13) infinite;
+         -o-animation:  play .8s steps(13) infinite;
+            animation:  play .8s steps(13) infinite;
 }
 
 @-webkit-keyframes play {
@@ -49,35 +50,196 @@
    from { background-position:    0px 0px; }
      to { background-position: 0px -1572px; }
 }
+/*ALEC*/
 
-/*
-@-webkit-keyframes stop {
-   from { background-position:    0px 0px; }
-     to { background-position: 0px 0px; }
+/*ATRIL*/
+.atril{
+    background-image: url("../images/kids/sprites/atril.png");
+    bottom: 80px;
+    cursor: pointer;
+    height: 130px;
+    left: 361px;
+    position: absolute;
+    width: 80px;
+    z-index: 99999999;
+}
+.atrilmove{
+     animation: 5s steps(60, end) 0s normal none infinite playatril;   
+     -webkit-animation: playatril 5s steps(60) infinite;
+       -moz-animation:  playatril 5s steps(60) infinite;
+        -ms-animation:  playatril 5s steps(60) infinite;
+         -o-animation:  playatril 5s steps(60) infinite;
+            animation:  playatril 5s steps(60) infinite;
 }
 
-@-moz-keyframes stop {
+@-webkit-keyframes playatril {
    from { background-position:    0px 0px; }
-     to { background-position: 0px 0px; }
+     to { background-position: -4720px 0px; }
 }
 
-@-ms-keyframes stop {
+@-moz-keyframes playatril {
    from { background-position:    0px 0px; }
-     to { background-position: 0px 0px; }
+     to { background-position: -4720px 0px; }
 }
 
-@-o-keyframes stop {
+@-ms-keyframes playatril {
    from { background-position:    0px 0px; }
-     to { background-position: 0px 0px; }
+     to { background-position: -4720px 0px; }
 }
 
-@keyframes sto {
+@-o-keyframes playatril {
    from { background-position:    0px 0px; }
-     to { background-position: 0px 0px; }
+     to { background-position: -4720px 0px; }
 }
 
-*/
+@keyframes playatril {
+   from { background-position:    0px 0px; }
+     to { background-position: -4720px 0px; }
+}
+/*ATRIL*/
 
+/*LAMP*/
+.lamp{
+    cursor:pointer;
+    background-image: url("../images/kids/sprites/lamp.png");
+    height: 156px;
+    right: 101px;
+    position: absolute;
+    bottom: 260px;
+    width: 99px;
+    z-index: 99999999;
+    
+
+}
+.lampmove{
+     animation: 4s steps(48, end) 0s normal none infinite playlamp;   
+     -webkit-animation: playlamp 4s steps(48) infinite;
+       -moz-animation:  playlamp 4s steps(48) infinite;
+        -ms-animation:  playlamp 4s steps(48) infinite;
+         -o-animation:  playlamp 4s steps(48) infinite;
+            animation:  playlamp 4s steps(48) infinite;
+}
+
+@-webkit-keyframes playlamp {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -7488px; }
+}
+
+@-moz-keyframes playlamp {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -7488px; }
+}
+
+@-ms-keyframes playlamp {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -7488px; }
+}
+
+@-o-keyframes playlamp {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -7488px; }
+}
+
+@keyframes playlamp {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -7488px; }
+}
+/*ATRIL*/
+/*Claqueta*//*
+.clac{
+    cursor:pointer;
+    background-image: url("../images/kids/sprites/clac.png");
+    height: 45px;
+    right: 461px;
+    position: absolute;
+    top: 260px;
+    width: 45px;
+    z-index: 99999999;
+    
+.clacmove{
+     animation: 1s steps(12, end) 0s normal none infinite playclac;   
+     -webkit-animation: playclac 1s steps(12) infinite;
+       -moz-animation:  playclac 1s steps(12) infinite;
+        -ms-animation:  playclac 1s steps(12) infinite;
+         -o-animation:  playclac 1s steps(12) infinite;
+            animation:  playclac 1s steps(12) infinite;
+}
+
+@-webkit-keyframes playclac {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -650px; }
+}
+
+@-moz-keyframes playclac {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -650px; }
+}
+
+@-ms-keyframes playclac {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -650px; }
+}
+
+@-o-keyframes playclac {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -650px; }
+}
+
+@keyframes playclac {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -650px; }
+}
+/*CLAC*/
+
+/*CAM*//*
+.came{
+    cursor:pointer;
+    background-image: url("../images/kids/sprites/cam.png");
+    height: 120px;
+    left: 361px;
+    position: absolute;
+    top: 160px;
+    width: 72px;
+    z-index: 99999999;
+    
+
+}
+.camemove{
+     animation: 0.8s steps(13, end) 0s normal none infinite playcam;   
+     -webkit-animation: playcam .8s steps(13) infinite;
+       -moz-animation:  playcam .8s steps(13) infinite;
+        -ms-animation:  playcam .8s steps(13) infinite;
+         -o-animation:  playcam .8s steps(13) infinite;
+            animation:  playcam .8s steps(13) infinite;
+}
+
+@-webkit-keyframes playcam {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1572px; }
+}
+
+@-moz-keyframes playcam {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1572px; }
+}
+
+@-ms-keyframes playcam {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1572px; }
+}
+
+@-o-keyframes playcam {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1572px; }
+}
+
+@keyframes playcam {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1572px; }
+}
+/*ALEC*/
+    
+    
 #nologo{
  height:0;   
 }

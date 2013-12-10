@@ -48,7 +48,7 @@
                         </div>  
                     <h1 class="demo-logo clearfix" id="logo-nino">
                         <img src="images/logo_ninos.png" alt="..." class="">
-                        </h1>
+                    </h1>
                    
                     
                 </header>
@@ -57,14 +57,13 @@
             <div class="row contenido fondoapp">
                 <section class="col-md-12" id="contentappkids">
                     <div class="alec"></div>
+                    <div class="atril"></div>
+                 <div class="lamp"></div><!--
+                    <div class="clac"></div>
+                    <div class="came"></div>-->
                     <div id="leamos" class="transparent_class"></div> 
                     <div id="continuaelcuento" class="transparent_class"></div>
                     <div id="dibujalahistoria" class="transparent_class"></div>
-                    <div id="robot" class="transparent_class"></div>
-                    <div id="maquina" class="transparent_class"></div>
-                    <div id="camara" class="transparent_class"></div>
-                    <div id="lampara" class="transparent_class"></div>
-                    <div id="pizarra" class="transparent_class"></div>
                     <div id="cartel" class="transparent_class"></div>
                 </section>
                 
@@ -102,8 +101,20 @@
           });
          
         $(".alec").hover(function(){
-            $(this).toggleClass("almove");
+            $(this).toggleClass("alecmove");
+        });
+        $(".atril").hover(function(){
+            $(this).toggleClass("atrilmove");
         })
+        $(".lamp").hover(function(){
+            $(this).toggleClass("lampmove");
+        });
+        $(".clac").hover(function(){
+            $(this).toggleClass("clacmove");
+        });
+        $(".came").hover(function(){
+            $(this).toggleClass("camemove");
+        });
           
           $("#leamos").click(function(){
                 $("#logo-nino").css("display","none");
