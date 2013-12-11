@@ -42,6 +42,8 @@ var __slice = Array.prototype.slice;
       this.color = this.options.defaultColor;
       this.size = this.options.defaultSize;
       this.tool = this.options.defaultTool;
+      console.log(this.canvas.data('data-imgvid-src'));
+
       this.actions = [];
       this.action = [];
       this.canvas.bind('click mousedown mouseup mousemove mouseleave mouseout touchstart touchmove touchend touchcancel', this.onEvent);
