@@ -1,4 +1,10 @@
 <!-- Aplicación que permite dibujar video-->
+  <div class="alecgiftcontenedor lightbox login-box">
+                    <a href="#" id="closelogin" class="close-login-link">X</a>
+                    <small></small>
+                    <div class="alecgift"></div>
+                    </div>
+                
                 <section class="col-md-12" id="contentappkids">
                     <img src="images/kids/alec-salir.png" id="robot-salir"/>
                     <img src="images/kids/objetos-continua-el-video.png" id="fondo-dibuja" />
@@ -9,18 +15,22 @@
                         </video>
                     </article>
                     <article class="text-center" id="vamos-video-a-dibujar">
-                        <small class="btn  btn-default btn-xs color-blanco " id="letsdraw">Vamos a Dibujar</small>
+                        <small class="btn  btn-default btn-xs color-blanco letsdraw" id="letsdraw">Vamos a Dibujar</small>
                     </article>
                     <article class="prettyprint text-center" id="video-a-dibujar-app">
                     <h3 class="titulo-video">Dibuja lo que paso con el globo</h3>
+
                     <div id="paleta" class="tools clearfix">
                     
 
                     </div>
                         <!-- add data for background according to las frame of video-->
-                        <canvas id="video_sketch" data-imgvid-src="../kids/videos/video.png" class="all clearfix" height="396">
+                        <canvas id="video_sketch" style="background-image:url('kids/videos/video.png');" class="all clearfix" height="396">
                         </canvas>
-                        <a href="#video_sketch" data-download="png" style="float: center; width: 100px;">Siguiente</a>
+                        <small class="btn  btn-default btn-xs color-blanco letsdraw" id="medalla">Entregar</small>
+                        <a class="btn  btn-default btn-xs color-blanco letsdraw" href="#video_sketch" data-download="png" style="float: center; width: 100px;">Vista Previa</a>
+
+
                         </article>  
                     
                 </section>
@@ -33,6 +43,75 @@
 
                                 window.location.href=window.location.href;                   
                             });
+                            /*$("#medalla").click(function(){
+                                alert("hola");
+                                //$(".alecgiftcontenedor").css("display","block");
+                                $("#alecgift").addClass("alecgiftmove");
+                            });
+                            */
+                           
+                            
+                          
+                
+                            $("#medalla").click(function(){
+                            //alert("hola");
+
+                                  /*******/
+                            var ancho = $(window).width();
+                            var alto = $(window).height();
+                                        
+                            var loginboxw = $('.login-box').width();
+                            var loginboxh = $('.login-box').height();
+                           
+                            
+                            
+                            var lftlogin =parseInt(ancho/2- loginboxw/2) -150;
+                            var toplogin =parseInt(alto/2 - loginboxh/2);
+                            ///Login
+                                
+                                $(".login-box").css({
+                                    "left" :(lftlogin),
+                                    "top" : (toplogin)
+                                });
+                                //$( ".lightbox" ).animate({ bottom: (top) }, 2000 );
+                                $( ".login-box" ).fadeIn( 1000, function() {
+                                    $(".login-box").css({
+                                            //"display": "block",
+                                            "left" : (lftlogin),
+                                            "top" : (toplogin)
+                                    });
+                                    //console.log("hola");
+                                //$(".alecgiftcontenedor").css("display","block");
+                                $(".alecgift").addClass("alecgiftmove");
+                                });
+                                
+                                 
+                            });
+                            
+                            $('#closelogin').click(function(){
+                                //console.log('hola');
+                                $(".alecgift").removeClass("alecgiftmove");
+                                window.location.href=window.location.href;                   
+
+                                 $( ".login-box" ).fadeOut( 1000, function() {
+                                        $(".login-box").css({
+                                        //"display": "block",
+                                         "left" : (lftlogin),
+                                         "top" : (toplogin)
+                                        });
+                                     //console.log("hola");
+                                //$(".alecgiftcontenedor").css("display","block");
+                                 });
+
+                            });
+                           //login
+                            
+                            
+                            
+                            
+                            
+                            
+                            /*******/
                             
                          $("#letsdraw").click(function(){
                             //alert("pepe");
@@ -52,9 +131,9 @@
                         });                            
                         $.each([3, 5, 10,11], function() {
                         if(this != 11){  
-                        $('#paleta').append("<a href='#colors_sketch' data-size='" + this + "'><img class='colore-paleta' src='images/kids/paleta-"+this+".png' /></a>");
+                        $('#paleta').append("<a href='#video_sketch' data-size='" + this + "'><img class='colore-paleta' src='images/kids/paleta-"+this+".png' /></a>");
                         }else{
-                            $('#paleta').append("<a href='#colors_sketch' data-color='fff'><img class='colore-paleta' src='images/kids/paleta-fff.png' /></a>");       
+                            $('#paleta').append("<a href='#video_sketch' data-color='#fff'><img class='colore-paleta' src='images/kids/paleta-fff.png' /></a>");       
                         }
                                
                                

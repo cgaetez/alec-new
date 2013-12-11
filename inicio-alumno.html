@@ -34,15 +34,18 @@
         <div class="row">
            
                 <header class="demo-headline clearfix">
+                    
                       <div class="top-head1">
                     <nav class="clearfix top navbar-fixed-top bs-docs-nav top-header">
-<p class="pull-left our"><img src="images/okapi-mini.png" /><span class="color-blanco">Aplicaciones para mejorar la Lectura, Escritura y Creatividad</span></p> <ul class="nav navbar-nav navbar-right">
+<p class="pull-left our"><img src="images/okapi-mini.png" /><span class="color-blanco">Aplicaciones para mejorar la Lectura, Escritura y Creatividad</span></p> 
+                        <!--
+                        <ul class="nav navbar-nav navbar-right">
                             <li class="pull-left links-small"><a href="#" id="videobutton">Demo</a></li>
                             <li class="pull-left links-small"><a href="preguntas-frecuentes.html">FAQ</a></li>
                             <li class="pull-left links-small"><a href="okapi-games.html">Okapi Games</a></li>
                             <li class="pull-left links-small"><a href="contacto.html">Contacto</a></li>
                         </ul>
-                            
+                           --> 
 
                     </nav>
                         </div>  
@@ -60,6 +63,7 @@
                     <div class="atril"></div>
                     <div class="lamp"></div> 
                     <div class="leamos"></div>
+                    <div class="camara"></div>
                     <div class="camara"></div>
                     <div class="continuaelcuento"></div>
                     <div class="dibujalahistoria"></div>
@@ -119,6 +123,9 @@
         });
         $(".camara").hover(function(){
             $(this).toggleClass("camaramove");
+        });
+        $(".compu").hover(function(){
+            $(this).toggleClass("compumove");
         });
         //go to app
         $(".leamos").click(function(){

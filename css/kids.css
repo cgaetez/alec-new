@@ -52,6 +52,56 @@
 }
 /*ALEC*/
 
+
+/*ALEC-AN*/
+
+.alecgift{
+    background-image: url("../images/kids/sprites/alecgift.png");
+    border: 0 solid #126C75;
+    cursor: pointer;
+    height: 200px;
+    margin: 200px;
+    width: 150px;
+    z-index: 99999999;
+
+}
+.alecgiftmove{
+     animation: 3s steps(40, end) 0s normal none infinite playalecgift;   
+     -webkit-animation: playalecgift 3s steps(40) infinite;
+       -moz-animation:  playalecgift 3s steps(40) infinite;
+        -ms-animation:  playalecgift 3s steps(40) infinite;
+         -o-animation:  playalecgift 3s steps(40) infinite;
+            animation:  playalecgift 3s steps(40) infinite;
+}
+
+@-webkit-keyframes playalecgift {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -8000px; }
+}
+
+@-moz-keyframes playalecgift {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -8000px; }
+}
+
+@-ms-keyframes playalecgift {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -8000px; }
+}
+
+@-o-keyframes playalecgift {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -8000px; }
+}
+
+@keyframes playalecgift {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -8000px; }
+}
+/*ALEC-ESTRELLADO*/
+
+
+
 /*ATRIL*/
 .atril{
     background-image: url("../images/kids/sprites/atril5.png");
@@ -71,7 +121,6 @@
          -o-animation:  playatril 5s steps(59) infinite;
             animation:  playatril 5s steps(59) infinite;
 }
-7476
 @-webkit-keyframes playatril {
    from { background-position:    0px 0px; }
      to { background-position: 0px -7729px; }
@@ -98,6 +147,52 @@
 }
 /*ATRIL*/
 
+/***COMPU**/
+.compu{
+    background-image: url("../images/kids/sprites/compu.png");
+    top: 80px;
+    cursor: pointer;
+    height: 55px;
+    left: 361px;
+    position: absolute;
+    width:55px;
+    z-index: 99999999;
+}
+.compumove{
+     animation: 3s steps(40, end) 0s normal none infinite playcompu;   
+     -webkit-animation: playcompu 3s steps(40) infinite;
+       -moz-animation:  playcompu 3s steps(40) infinite;
+        -ms-animation:  playcompu 3s steps(40) infinite;
+         -o-animation:  playcompu 3s steps(40) infinite;
+            animation:  playcompu 3s steps(40) infinite;
+}
+@-webkit-keyframes playcompu {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2200px; }
+}
+
+@-moz-keyframes playcompu {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2200px; }
+}
+
+@-ms-keyframes playcompu {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2200px; }
+}
+
+@-o-keyframes playcompu {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2200px; }
+}
+
+@keyframes playcompu {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2200px; }
+}
+/*ATRIL*/
+
+/**COMPU**/
 /*LAMP*/
 .lamp{
       background-image: url("../images/kids/sprites/lamp.png");
@@ -459,10 +554,21 @@ border-radius: 5px;
     position:absolute;
     width:40%;
     left:30%;
-    top:500px;
+    top: 408px;
     /*background-color:white;  */
 }
+.letsdraw{
+ background-color:#3B364A;   
+}
+
 .titulo-historia{
+ background-color: #D3D3D3;
+    border-radius: 9px;
+    margin-top: 0;
+    padding: 10px 0;
+    width: auto;  
+}
+.titulo-video{
  background-color: #D3D3D3;
     border-radius: 9px;
     margin-top: 0;

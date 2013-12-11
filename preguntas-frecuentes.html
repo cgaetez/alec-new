@@ -46,7 +46,7 @@
 
                     </nav>
                         </div>  
-                   <a href="inicio-profe.html">
+                    <a href="index.html">
                     <h1 class="demo-logo clearfix" id="logo-fondo">
                       <img src="images/todo/alec.png" class="logo-img  pull-left" />
                       <!--<img src="images/todo/leo-v.svg" class="logo-img  pull-left"/>-->
@@ -63,34 +63,34 @@
                 
                 <aside class="col-md-2">
                         <img src="images/todo/profe.jpg" class="foto-perfil"/>
-                        <nav>
+                         <nav>
                             <ul class="nav nav-pills nav-stacked fondo-gris-claro small">
-                                <li><button class="menu-p"   id="inicio-profe" >Inicio</button></li>
-                                <li><button class="menu-p"   id="perfil-profe" >Perfil</button>
-                                <li><button class="menu-p"   id="cursos-profe" >Mis Cursos</button></li>
+                                <li><button class="btn btn-success active-menu"   id="inicio-profe">Inicio</button></li>
+                                <li><button class="btn btn-success"   id="perfil-profe" >Perfil</button>
+                                <li><button class="btn btn-success"   id="cursos-profe" >Mis Cursos</button></li>
                                 <li>
-                                    <button class="menu-p" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  class="collapsed">
+                                    <button class="btn btn-success" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  class="collapsed">
                                     Tareas
                                     <span class="caret"></span>
                                     </button>
                                     <ul id="collapseOne" class="panel-collapse collapse" role="menu" aria-labelledby="dropdownMenu">
-                                        <li><button class="active-menu menu-p"   id="lectura-colectiva" >Lectura Colectiva</button></li>
-                                        <li><button class="active-menu menu-p"   id="dibuja-historia" >Dibujar la Historia</button></li>
-                                        <li><button class="active-menu menu-p"   id="crear-historia" >Crear la Historia</button></li>
+                                        <li><button class="btn btn-success"   id="lectura-colectiva" >Lectura Colectiva</button></li>
+                                        <li><button class="btn btn-success"   id="dibuja-historia" >Dibujar el Cuento</button></li>
+                                        <li><button class="btn btn-success"   id="crear-historia" >Crear la Historia</button></li>
                                     </ul>                        
                                 </li>
                             </ul>
                             
-                        </nav>                    
+                        </nav>               
                 </aside>
                 <section class="col-md-10" id="contentapp">
                         <h2 class="titulo-principal">Preguntas Frecuentes</h2>
                         <article class="prettyprint">
-                            <div class="panel-group" id="accordion">
+                            <div class="panel-group" id="accordion1">
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
           Collapsible Group Item #1
         </a>
       </h4>
@@ -104,7 +104,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
           Collapsible Group Item #2
         </a>
       </h4>
@@ -118,7 +118,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
           Collapsible Group Item #3
         </a>
       </h4>
@@ -163,38 +163,37 @@
  
  
     
-      
     <script>
         $(document).ready(function(){   
-            
+    
           $("#inicio-profe").click(function(){
                 $("#contentapp").load("contenido/timeline-profe.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
                 
           }); 
           $("#perfil-profe").click(function(){
                 $("#contentapp").load("contenido/perfil-profe.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
                
           }); 
             
           $("#lectura-colectiva").click(function(){
                 $("#contentapp").load("contenido/lectura-colectiva.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           });
           $("#dibuja-historia").click(function(){
                 $("#contentapp").load("contenido/dibuja-historia.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           });
           $("#crear-historia").click(function(){
                 $("#contentapp").load("contenido/crear-historia.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           });
@@ -202,7 +201,7 @@
             
           $("#cursos-profe").click(function(){
                 $("#contentapp").load("contenido/cursos-profe.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           }); 
@@ -244,8 +243,9 @@
 			});
             
         //video
+            //Curso
             
-           
+        
 		
          
 

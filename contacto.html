@@ -22,18 +22,18 @@
     <![endif]-->
   </head>
   <body>
-    <div class=" video-box lightbox">
-        <a href="#" id="closevideo" class="close-login-link">X</a>
-          <video width="100%" height="349" data-setup="{}" poster="images/video/poster.jpg" preload="auto" controls="" class="videojs" tabindex="0" id="us-video">
-            <source type="video/mp4" src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4"></source>                                       <source type="video/webm" src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm"></source>
-        </video>
-    </div><!--col6-->
+      <div class="lightbox login-box">
+          <a href="#" id="closelogin" class="close-login-link">X</a>
+          <div class="form-group clearfix">
+            <h6>Gracias por Contactarte con Okapi Games</h6>
+          </div>
+      </div>
   
 <div class="container">
        
         <div class="row">
            
-                <header class="demo-headline clearfix">
+              <header class="demo-headline clearfix">
                       <div class="top-head1">
                     <nav class="clearfix top navbar-fixed-top bs-docs-nav top-header">
 <p class="pull-left our"><img src="images/okapi-mini.png" /><span class="color-blanco">Aplicaciones para mejorar la Lectura, Escritura y Creatividad</span></p> <ul class="nav navbar-nav navbar-right">
@@ -46,8 +46,8 @@
 
                     </nav>
                         </div>  
-                    <a href="inicio-profe.html">
-                    <h1 class="demo-logo clearfix">
+                    <a href="index.html">
+                    <h1 class="demo-logo clearfix" id="logo-fondo">
                       <img src="images/todo/alec.png" class="logo-img  pull-left" />
                       <!--<img src="images/todo/leo-v.svg" class="logo-img  pull-left"/>-->
                       <!--<span class="leo pull-left">
@@ -62,29 +62,36 @@
                 
                 <aside class="col-md-2">
                         <img src="images/todo/profe.jpg" class="foto-perfil"/>
-                        <nav>
+                         <nav>
                             <ul class="nav nav-pills nav-stacked fondo-gris-claro small">
-                                <li><button class="active-menu menu-p"   id="inicio-profe" >Inicio</button></li>
-                                <li><button class="menu-p"   id="perfil-profe" >Perfil</button>
-                                <li><button class="menu-p"   id="cursos-profe" >Mis Cursos</button></li>
+                                <li><button class="btn btn-success active-menu"   id="inicio-profe">Inicio</button></li>
+                                <li><button class="btn btn-success"   id="perfil-profe" >Perfil</button>
+                                <li><button class="btn btn-success"   id="cursos-profe" >Mis Cursos</button></li>
                                 <li>
-                                    <button class="menu-p" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  class="collapsed">
+                                    <button class="btn btn-success" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  class="collapsed">
                                     Tareas
                                     <span class="caret"></span>
                                     </button>
                                     <ul id="collapseOne" class="panel-collapse collapse" role="menu" aria-labelledby="dropdownMenu">
-                                        <li><button class="active-menu menu-p"   id="lectura-colectiva" >Lectura Colectiva</button></li>
-                                        <li><button class="active-menu menu-p"   id="dibuja-historia" >Dibujar la Historia</button></li>
-                                        <li><button class="active-menu menu-p"   id="crear-historia" >Crear la Historia</button></li>
+                                        <li><button class="btn btn-success"   id="lectura-colectiva" >Lectura Colectiva</button></li>
+                                        <li><button class="btn btn-success"   id="dibuja-historia" >Dibujar el Cuento</button></li>
+                                        <li><button class="btn btn-success"   id="crear-historia" >Crear la Historia</button></li>
                                     </ul>                        
                                 </li>
                             </ul>
                             
-                        </nav>                    
+                        </nav>               
                 </aside>
-                <section class="col-md-10" id="contentapp">
-                        
-                </section>
+                <section class="col-md-4 col-md-offset-2" id="formindex">
+
+                    <form role="form">
+                        <input type="text" class="form-control form-group" id="InputName" placeholder="Nombre">
+                        <input type="text" class="form-control form-group" id="InputApellido" placeholder="Apellido">
+                        <input type="email" class="form-control form-group" id="InputEmail" placeholder="Ingresa tu email">
+                        <textarea class="form-control" rows="6" cols="3" style="height:150px;"></textarea>
+                        <button id="loginbutton" type="submit" class="btn btn-success  all">Enviar Consulta</button>
+                    </form>   
+                    </section>
                 
 
             </div>
@@ -115,36 +122,35 @@
       
     <script>
         $(document).ready(function(){   
-          $("#contentapp").load("contenido/timeline-profe.html");
-            
+    
           $("#inicio-profe").click(function(){
                 $("#contentapp").load("contenido/timeline-profe.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
                 
           }); 
           $("#perfil-profe").click(function(){
                 $("#contentapp").load("contenido/perfil-profe.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
                
           }); 
             
           $("#lectura-colectiva").click(function(){
                 $("#contentapp").load("contenido/lectura-colectiva.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           });
           $("#dibuja-historia").click(function(){
                 $("#contentapp").load("contenido/dibuja-historia.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           });
           $("#crear-historia").click(function(){
                 $("#contentapp").load("contenido/crear-historia.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           });
@@ -152,52 +158,51 @@
             
           $("#cursos-profe").click(function(){
                 $("#contentapp").load("contenido/cursos-profe.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           }); 
-            //Video
-            var videoboxw = $('.video-box').width();
-            var videoboxh = $('.video-box').height();
-            var vidw = parseInt(videoboxw/2);
-            var lftvideo =parseInt(ancho/2 - vidw);
-            var topvideo =parseInt(alto/2 - videoboxh/2);
+  /*
+            //Curso
+            var ancho = $(window).width();
+            var alto = $(window).height();
+                        
+            var loginboxw = $('.login-box').width();
+            var loginboxh = $('.login-box').height();
+           
             
-            $('#videobutton').click(function(){    
-                console.log("ancho " + ancho + " video " +  videoboxw + "--" + lftvideo);
-		          $(".video-box").css({
-                      "left" :(lftvideo),
-                      "top" : (topvideo)
-                  });
-              
+            
+            var lftlogin =parseInt(ancho/2- loginboxw/2) - 20;
+            var toplogin =parseInt(alto/2 - loginboxh/2);
+            
+            ///Login  
+        $('#loginbutton').click(function(){
+                $(".login-box").css({
+                    "left" :(lftlogin),
+                    "top" : (toplogin)
+                });
                 //$( ".lightbox" ).animate({ bottom: (top) }, 2000 );
-                $( ".video-box" ).fadeIn( 1000, function() {
-                         $(".video-box").css({
+                $( ".login-box" ).fadeIn( 1000, function() {
+                    $(".login-box").css({
                             //"display": "block",
-                            "left" : (lftvideo),
-                            "top" : (topvideo)
-                        });
-                     });
-                 $('#us-video')[0].play();
+                            "left" : (lftlogin),
+                            "top" : (toplogin)
+                    });
+                });
             });
             
-			$('#closevideo').click(function(){
-                $('#us-video')[0].pause();
-                $( ".video-box" ).fadeOut( 1000, function() {
-                        $(".video-box").css({
+			$('#closelogin').click(function(){
+			    console.log('hola');
+                 $( ".login-box" ).fadeOut( 1000, function() {
+                        $(".login-box").css({
                         //"display": "block",
-                         "left" : (lftvideo),
-                         "top" : (topvideo)
+                         "left" : (lftlogin),
+                         "top" : (toplogin)
                         });
                  });
 			});
-            
-        //video
-               
-         
-            
-           
-		
+           //login
+		*/
          
 
     });

@@ -25,10 +25,10 @@
       <div class="lightbox login-box">
           <a href="#" id="closelogin" class="close-login-link">X</a>
           <div class="form-group clearfix">
-            <input type="text" id="login-name" placeholder="Enter your name" value="" class="form-control login-field form-group clearfix">
+            <input type="text" id="username" placeholder="Enter your name"  class="form-control login-field form-group clearfix">
             <input type="password" id="login-pass" placeholder="Password" value="" class="form-control login-field form-group">
           </div>
-          <a href="inicio-profe.html" class="btn btn-purple btn-lg btn-block">Login</a>
+          <button id="botonLogin" class="btn btn-purple btn-lg btn-block">Login</button>
           <a href="#" class="login-link">Lost your password?</a>
       </div>
     <div class=" video-box lightbox">
@@ -185,7 +185,11 @@
             
         });
             
-        $(document).on("click", "#botonLogin", function() { var username = $("#username").val(); if (username == "profesor") { window.location.href("/inicio-profe.html"); } else if (username == "alumno") { window.location.href("/inicio-alumno.html"); } else { alert("No existe el usuario"); $("#username").val(""); $("#username").focus(); } });
+        $(document).on("click", "#botonLogin", function() { var username = $("#username").val(); if (username == "profesor") {
+            window.location.href="inicio-profe.html";
+        } else if (username == "alumno") {
+                window.location.href="inicio-alumno.html"; 
+            } else { alert("No existe el usuario"); $("#username").val(""); $("#username").focus(); } });
         
     </script>
   </body>

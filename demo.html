@@ -46,8 +46,8 @@
 
                     </nav>
                         </div>  
-                    <a href="inicio-profe.html">
-                    <h1 class="demo-logo clearfix">
+                    <a href="index.html">
+                    <h1 class="demo-logo clearfix" id="logo-fondo">
                       <img src="images/todo/alec.png" class="logo-img  pull-left" />
                       <!--<img src="images/todo/leo-v.svg" class="logo-img  pull-left"/>-->
                       <!--<span class="leo pull-left">
@@ -62,20 +62,20 @@
                 
                 <aside class="col-md-2">
                         <img src="images/todo/profe.jpg" class="foto-perfil"/>
-                        <nav>
+                         <nav>
                             <ul class="nav nav-pills nav-stacked fondo-gris-claro small">
-                                <li><button class="active-menu menu-p"   id="inicio-profe" >Inicio</button></li>
-                                <li><button class="menu-p"   id="perfil-profe" >Perfil</button>
-                                <li><button class="menu-p"   id="cursos-profe" >Mis Cursos</button></li>
+                                <li><button class="btn btn-success active-menu"   id="inicio-profe">Inicio</button></li>
+                                <li><button class="btn btn-success"   id="perfil-profe" >Perfil</button>
+                                <li><button class="btn btn-success"   id="cursos-profe" >Mis Cursos</button></li>
                                 <li>
-                                    <button class="menu-p" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  class="collapsed">
+                                    <button class="btn btn-success" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  class="collapsed">
                                     Tareas
                                     <span class="caret"></span>
                                     </button>
                                     <ul id="collapseOne" class="panel-collapse collapse" role="menu" aria-labelledby="dropdownMenu">
-                                        <li><button class="active-menu menu-p"   id="lectura-colectiva" >Lectura Colectiva</button></li>
-                                        <li><button class="active-menu menu-p"   id="dibuja-historia" >Dibujar la Historia</button></li>
-                                        <li><button class="active-menu menu-p"   id="crear-historia" >Crear la Historia</button></li>
+                                        <li><button class="btn btn-success"   id="lectura-colectiva" >Lectura Colectiva</button></li>
+                                        <li><button class="btn btn-success"   id="dibuja-historia" >Dibujar el Cuento</button></li>
+                                        <li><button class="btn btn-success"   id="crear-historia" >Crear la Historia</button></li>
                                     </ul>                        
                                 </li>
                             </ul>
@@ -119,35 +119,35 @@
       
     <script>
         $(document).ready(function(){   
-            
+    
           $("#inicio-profe").click(function(){
                 $("#contentapp").load("contenido/timeline-profe.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
                 
           }); 
           $("#perfil-profe").click(function(){
                 $("#contentapp").load("contenido/perfil-profe.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
                
           }); 
             
           $("#lectura-colectiva").click(function(){
                 $("#contentapp").load("contenido/lectura-colectiva.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           });
           $("#dibuja-historia").click(function(){
                 $("#contentapp").load("contenido/dibuja-historia.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           });
           $("#crear-historia").click(function(){
                 $("#contentapp").load("contenido/crear-historia.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           });
@@ -155,15 +155,51 @@
             
           $("#cursos-profe").click(function(){
                 $("#contentapp").load("contenido/cursos-profe.html");
-                $('.menu-p').removeClass('active-menu');
+                $('.btn-success').removeClass('active-menu');
                 $(this).toggleClass('active-menu');
 
           }); 
-          
-               
-         
             
-           
+         //Video
+            var videoboxw = $('.video-box').width();
+            var videoboxh = $('.video-box').height();
+            var vidw = parseInt(videoboxw/2);
+            var lftvideo =parseInt(ancho/2 - vidw);
+            var topvideo =parseInt(alto/2 - videoboxh/2);
+            
+            $('#videobutton').click(function(){    
+                console.log("ancho " + ancho + " video " +  videoboxw + "--" + lftvideo);
+		          $(".video-box").css({
+                      "left" :(lftvideo),
+                      "top" : (topvideo)
+                  });
+              
+                //$( ".lightbox" ).animate({ bottom: (top) }, 2000 );
+                $( ".video-box" ).fadeIn( 1000, function() {
+                         $(".video-box").css({
+                            //"display": "block",
+                            "left" : (lftvideo),
+                            "top" : (topvideo)
+                        });
+                     });
+                 $('#us-video')[0].play();
+            });
+            
+			$('#closevideo').click(function(){
+                $('#us-video')[0].pause();
+                $( ".video-box" ).fadeOut( 1000, function() {
+                        $(".video-box").css({
+                        //"display": "block",
+                         "left" : (lftvideo),
+                         "top" : (topvideo)
+                        });
+                 });
+			});
+            
+        //video
+            //Curso
+            
+        
 		
          
 
