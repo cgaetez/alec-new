@@ -6,7 +6,7 @@
                     </div>
                 
                 <section class="col-md-12" id="contentappkids">
-                    <img src="images/kids/alec-salir.png" id="robot-salir"/>
+                    <div id="robot-salir" ></div>
                     <img src="images/kids/objetos-continua-el-video.png" id="fondo-dibuja" />
                     <article class="prettyprint text-center transparent_class_2" id="video-a-dibujar">
                         <video width="795" height="396" data-setup="{}" poster="kids/videos/video.png" preload="auto"  class="videojs" tabindex="0" id="v-1" autoplay>
@@ -50,6 +50,9 @@
                             });
                             */
                            
+                            $("#robot-salir").hover(function(){
+                                    $(this).toggleClass("robot-salirmove");
+                            });  
                             
                           
                 
@@ -126,7 +129,7 @@
                         
                         $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000'], function() {
                         $short = this.substring(1,4);
-                        $('#paleta').append("<a href='#colors_sketch' data-color='" + this + "'><img class='colore-paleta' src='images/kids/paleta-"+$short+".png' /></a>");  
+                        $('#paleta').append("<a href='#video_sketch' data-color='" + this + "'><img class='colore-paleta' src='images/kids/paleta-"+$short+".png' /></a>");  
                       
                         });                            
                         $.each([3, 5, 10,11], function() {

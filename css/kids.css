@@ -538,15 +538,55 @@
     position:relative;
 }
 
+
+/****/
 #robot-salir{
- position:absolute;
     left:0;
     top:20px;
-    z-index:9999999;
-    cursor:hand;
+    position: absolute;
     cursor:pointer;
-   
+    background-image: url("../images/kids/sprites/robot_salir.png");
+    width: 165px;
+    height: 155px;
+    position: absolute;
+    z-index: 99999999;
 }
+
+.robot-salirmove{
+     animation: 1s steps(11, end) 0s normal none infinite playrobotsalir;   
+     -webkit-animation: playrobotsalir 1s steps(11) infinite;
+       -moz-animation:  playrobotsalir 1s steps(11) infinite;
+        -ms-animation:  playrobotsalir 1s steps(11) infinite;
+         -o-animation:  playrobotsalir 1s steps(11) infinite;
+            animation:  playrobotsalir 1s steps(11) infinite;
+}
+
+@-webkit-keyframes playrobotsalir {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1705px; }
+}
+
+@-moz-keyframes playrobotsalir {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1705px; }
+}
+
+@-ms-keyframes playrobotsalir {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1705px; }
+}
+
+@-o-keyframes playrobotsalir {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1705px; }
+}
+
+@keyframes playrobotsalir {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -1705px; }
+}
+
+/****/
 
 
 
@@ -586,6 +626,17 @@ left:0;
     cursor:pointer;
  
 }
+#historia-a-leer{
+ position:absolute;
+ width:50%;
+    left:25%;
+    top:10px;
+    background-color:white;
+    max-height:600px;
+    overflow:auto;
+}
+
+
 #historia-a-dibujar{
  position:absolute;
  width:40%;

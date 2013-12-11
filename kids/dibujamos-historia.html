@@ -6,7 +6,7 @@
                     </div>
                 
                 <section class="col-md-12" id="contentappkids">
-                    <img src="images/kids/alec-salir.png" id="robot-salir"/>
+                    <div id="robot-salir" ></div>
                     <img src="images/kids/objetos-dibujar.png" id="fondo-dibuja" />
                     <article class="prettyprint text-center transparent_class_2" id="historia-a-dibujar">
                         <header class="clearfix">
@@ -37,7 +37,7 @@
                         
                         <canvas id="colors_sketch" class="all clearfix" height="450"></canvas>
                         <small class="btn  btn-default btn-xs color-blanco letsdraw" id="medalla">Entregar</small>
-                        <a class="btn  btn-default btn-xs color-blanco letsdraw" href="#video_sketch" data-download="png" style="float: center; width: 100px;">Vista Previa</a>
+                        <a class="btn  btn-default btn-xs color-blanco letsdraw" href="#colors_sketch" data-download="png" style="float: center; width: 100px;">Vista Previa</a>
                         
                     
                     </article>  
@@ -52,6 +52,10 @@
                                 
                                 window.location.href=window.location.href;                   
                             });
+                            
+                            $("#robot-salir").hover(function(){
+                                    $(this).toggleClass("robot-salirmove");
+                            });  
                             
                             $("#medalla").click(function(){
                             //alert("hola");

@@ -1,39 +1,130 @@
-<!-- Aplicación que permite leer de forma conjunta-->
+<!-- Aplicación que permite dibujar alguna lectura asignada-->
+  <div class="alecgiftcontenedor lightbox login-box">
+                    <a href="#" id="closelogin" class="close-login-link">X</a>
+                    <small></small>
+                    <div class="alecgift"></div>
+                    </div>
+                
                 <section class="col-md-12" id="contentappkids">
-                    <img src="images/kids/alec-salir.png" id="robot-salir"/>
-                    <article class="prettyprint text-center transparent_class_2" id="historia-a-dibujar">
-                        <header class="clearfix">
-                            <h2>La tos de la muñeca</h2> 
-                        </header>
-                        <section class="cuento" id="page-1">
-                        <p>Como mi linda muñeca tiene un poquito de tos,</p>
-                        <p>yo, que en seguida me aflijo , hice llamar al doctor.</p>
-                        <p>Serio y callado a la enferma largo tiempo examinó,</p>
-                        <p>ya poniéndole el termómetro, ya mirando su reloj.</p>
-                        <p>La muñeca estaba pálida, yo temblaba de emoción,</p>
-                        <p>y al fin el médico dijo, bajando un poco la voz:</p>
-                        <p>–Esta tos sólo se cura con un caramelo o dos.</p>
-                        </section>
-                        <a href="" >
-                            <small >Autor: Pepe Cerdiales</small>                                         
-                        </a>
-                    </article>
+                <div id="robot-salir" ></div>
+
+                    <img src="images/kids/objetos-leamos-juntos.png" id="fondo-dibuja" />
+                <article class="prettyprint text-center transparent_class_2" id="historia-a-leer">
+                    <section id="cuento">
+                        <h3>El Gol</h3>
+                        El equipo de Agustín tenía varios exámenes y después el recreo. En el recreo se sentía el calor de la rivalidad los capitanes Agustín y Yeray se echaron una miradita.<br>
+                        Y por fin empieza el partido, hiban igualados, quedaban cinco minutos y el resultado era empate a cero, pero por fin llego la jugada de gol, hicieron mucho tiqui taca hasta que al final llega a Agustín se regatea a uno, luego a otro y se mete sólo en el área, con la pelota apunta dispara……y gooooooool!!!!!!!<br>
+                        Y en ese momento toca el timbre de final de recreo y el equipo de Agustín es campeón cuando termina el cole. Lo celebran todos juntos comiendo en casa de Agustín.<br>
+                        Fin<br>
+                        Moraleja: Nunca hay que darse por vencido y hay que jugar en equipo.<br>
+                        Valores del cuento: La amistad ante todo.<br>                       
+                    </section>              
+                        <small class="clear btn  btn-default btn-xs color-blanco letsdraw" id="medalla">Guardar</small>
+                    </article>  
                     
-                        <a href="#colors_sketch" data-download="png" style="float: center; width: 100px;">Siguiente</a>
+                </section>
                         <script type="text/javascript">
-                               
+                            if (!window.cgaetezSelector) {
+                                cgaetezSelector = {};
+                            }
+                
+                            cgaetezSelector.getSelected = function(e) {
+                                var range = window.getSelection().getRangeAt(0);
+                                var contents = range.extractContents();
+                                var elem = document.createElement("span");
+                                elem.style.backgroundColor = "#00FFFF";
+                                elem.appendChild(contents);
+                                range.insertNode(elem);
+                            }
+                
+                            cgaetezSelector.mouseup = function() {                                
+                                var selectedText = cgaetezSelector.getSelected();
+                            }
                             
-                            $("#contentappkids").css("background-image","url('images/kids/fondo.jpg')");              
+                            $(document).click(function (e)
+                            {
+                                if (e.target == document.getElementById("cuento")){
+                                    //alert("In");
+                                    $(document).bind('mouseup', cgaetezSelector.mouseup);
+                                }
+                                else{
+                                    //alert("Out!");
+                                }
+                            });
+                            
+                            
+                            
+                            
+                            
+                            $("#contentappkids").css("background-image","url('images/kids/fondo.jpg')");
+
                             $("#robot-salir").click(function(){
                             //alert("pepe");
                                 
                                 window.location.href=window.location.href;                   
                             });
                             
+                            $("#robot-salir").hover(function(){
+                                    $(this).toggleClass("robot-salirmove");
+                            });
                             
-                         
-                               
-                        
+                            
+                            
+                            $("#medalla").click(function(){
+                            //alert("hola");
+
+                                  /*******/
+                            var ancho = $(window).width();
+                            var alto = $(window).height();
+                                        
+                            var loginboxw = $('.login-box').width();
+                            var loginboxh = $('.login-box').height();
+                           
+                            
+                            
+                            var lftlogin =parseInt(ancho/2- loginboxw/2) -100;
+                            var toplogin =parseInt(alto/2 - loginboxh/2);
+                            ///Login
+                                
+                                $(".login-box").css({
+                                    "left" :(lftlogin),
+                                    "top" : (toplogin)
+                                });
+                                //$( ".lightbox" ).animate({ bottom: (top) }, 2000 );
+                                $( ".login-box" ).fadeIn( 1000, function() {
+                                    $(".login-box").css({
+                                            //"display": "block",
+                                            "left" : (lftlogin),
+                                            "top" : (toplogin)
+                                    });
+                                    //console.log("hola");
+                                //$(".alecgiftcontenedor").css("display","block");
+                                $(".alecgift").addClass("alecgiftmove");
+                                });
+                                
+                                 
+                            });
+                            
+                            $('#closelogin').click(function(){
+                                //console.log('hola');
+                                $(".alecgift").removeClass("alecgiftmove");
+                                window.location.href=window.location.href;                   
+
+                                 $( ".login-box" ).fadeOut( 1000, function() {
+                                        $(".login-box").css({
+                                        //"display": "block",
+                                         "left" : (lftlogin),
+                                         "top" : (toplogin)
+                                        });
+                                     //console.log("hola");
+                                //$(".alecgiftcontenedor").css("display","block");
+                                 });
+
+                            });
+                           //login
+
+                                                            
+                                                
+                 
                         </script>
-                    
-                </section>
+
