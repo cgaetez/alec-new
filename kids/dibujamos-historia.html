@@ -1,4 +1,10 @@
 <!-- Aplicación que permite dibujar alguna lectura asignada-->
+  <div class="alecgiftcontenedor lightbox login-box">
+                    <a href="#" id="closelogin" class="close-login-link">X</a>
+                    <small></small>
+                    <div class="alecgift"></div>
+                    </div>
+                
                 <section class="col-md-12" id="contentappkids">
                     <img src="images/kids/alec-salir.png" id="robot-salir"/>
                     <img src="images/kids/objetos-dibujar.png" id="fondo-dibuja" />
@@ -16,11 +22,11 @@
                         <p>–Esta tos sólo se cura con un caramelo o dos.</p>
                         </section>
                         <a href="" >
-                            <small >Autor: Germán Berdiales</small>                                         
+                            <small >Autor: Hector Gaete</small>                                         
                         </a>
                     </article>
                     <article class="text-center" id="vamos-historia-a-dibujar">
-                        <small class="btn  btn-default btn-xs color-blanco " id="letsdraw">Vamos a Dibujar</small>
+                        <small class="btn  btn-default btn-xs color-blanco letsdraw" id="letsdraw">Vamos a Dibujar</small>
                     </article>
                     <article class="prettyprint text-center" id="historia-a-dibujar-app">
                     <h3 class="titulo-historia">Dibuja a la muñeca</h3>
@@ -30,8 +36,12 @@
                     </div>
                         
                         <canvas id="colors_sketch" class="all clearfix" height="450"></canvas>
-                        <a href="#colors_sketch" data-download="png" style="float: center; width: 100px;">Siguiente</a>
-                        </article>  
+                        <small class="btn  btn-default btn-xs color-blanco letsdraw" id="medalla">Entregar</small>
+                        <a class="btn  btn-default btn-xs color-blanco letsdraw" href="#video_sketch" data-download="png" style="float: center; width: 100px;">Vista Previa</a>
+                        
+                    
+                    </article>  
+                    
                     
                 </section>
                         <script type="text/javascript">
@@ -42,6 +52,60 @@
                                 
                                 window.location.href=window.location.href;                   
                             });
+                            
+                            $("#medalla").click(function(){
+                            //alert("hola");
+
+                                  /*******/
+                            var ancho = $(window).width();
+                            var alto = $(window).height();
+                                        
+                            var loginboxw = $('.login-box').width();
+                            var loginboxh = $('.login-box').height();
+                           
+                            
+                            
+                            var lftlogin =parseInt(ancho/2- loginboxw/2) -100;
+                            var toplogin =parseInt(alto/2 - loginboxh/2);
+                            ///Login
+                                
+                                $(".login-box").css({
+                                    "left" :(lftlogin),
+                                    "top" : (toplogin)
+                                });
+                                //$( ".lightbox" ).animate({ bottom: (top) }, 2000 );
+                                $( ".login-box" ).fadeIn( 1000, function() {
+                                    $(".login-box").css({
+                                            //"display": "block",
+                                            "left" : (lftlogin),
+                                            "top" : (toplogin)
+                                    });
+                                    //console.log("hola");
+                                //$(".alecgiftcontenedor").css("display","block");
+                                $(".alecgift").addClass("alecgiftmove");
+                                });
+                                
+                                 
+                            });
+                            
+                            $('#closelogin').click(function(){
+                                //console.log('hola');
+                                $(".alecgift").removeClass("alecgiftmove");
+                                window.location.href=window.location.href;                   
+
+                                 $( ".login-box" ).fadeOut( 1000, function() {
+                                        $(".login-box").css({
+                                        //"display": "block",
+                                         "left" : (lftlogin),
+                                         "top" : (toplogin)
+                                        });
+                                     //console.log("hola");
+                                //$(".alecgiftcontenedor").css("display","block");
+                                 });
+
+                            });
+                           //login
+                            
                             
                          $("#letsdraw").click(function(){
                             //alert("pepe");

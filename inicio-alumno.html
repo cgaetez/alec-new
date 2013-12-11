@@ -50,7 +50,7 @@
                     </nav>
                         </div>  
                     <h1 class="demo-logo clearfix" id="logo-nino">
-                        <img src="images/logo_ninos.png" alt="..." class="">
+                       <!-- <img src="images/logo_ninos.png" alt="..." class="">-->
                     </h1>
                    
                     
@@ -64,10 +64,11 @@
                     <div class="lamp"></div> 
                     <div class="leamos"></div>
                     <div class="camara"></div>
-                    <div class="camara"></div>
+                    <div class="compu"></div>
+                    <div class="claqueta"></div>
                     <div class="continuaelcuento"></div>
                     <div class="dibujalahistoria"></div>
-                    <div id="cartel"></div>
+                    <!--<div id="cartel"></div>-->
                 </section>
                 
 
@@ -99,9 +100,13 @@
     <script type="text/javascript" defer>
         /*$("#contentappkids").css("background-image","url('images/kids/casa.jpg')");*/
         $(document).ready(function(){   
-        $("#cartel").click(function(){
+        $("#logo-nino").click(function(){
             window.location.href=window.location.href;                   
         });
+        $("#logo-nino").hover(function(){
+            $(this).toggleClass("logo-ninomove");
+        });  
+            
             
         $(".leamos").hover(function(){
             $(this).toggleClass("leamosmove");
@@ -127,6 +132,10 @@
         $(".compu").hover(function(){
             $(this).toggleClass("compumove");
         });
+        $(".claqueta").hover(function(){
+            $(this).toggleClass("claquetamove");
+        });
+            
         //go to app
         $(".leamos").click(function(){
             $("#logo-nino").css("display","none");

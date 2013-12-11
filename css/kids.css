@@ -4,6 +4,56 @@
     height:650px;
     position:relative;
 }
+
+#logo-nino{
+    left: 50px;
+    position: absolute;
+    top: 60px;
+    cursor:pointer;
+    background-image: url("../images/kids/sprites/logo-kid.png");
+    height: 87px;
+    position: absolute;
+    width: 217px;
+    z-index: 99999999;
+}
+
+.logo-ninomove{
+     animation: 2.5s steps(29, end) 0s normal none infinite playlogo;   
+     -webkit-animation: playlogo 2.5s steps(29) infinite;
+       -moz-animation:  playlogo 2.5s steps(29) infinite;
+        -ms-animation:  playlogo 2.5s steps(29) infinite;
+         -o-animation:  playlogo 2.5s steps(29) infinite;
+            animation:  playlogo 2.5s steps(29) infinite;
+}
+
+@-webkit-keyframes playlogo {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2523px; }
+}
+
+@-moz-keyframes playlogo {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2523px; }
+}
+
+@-ms-keyframes playlogo {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2523px; }
+}
+
+@-o-keyframes playlogo {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2523px; }
+}
+
+@keyframes playlogo {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2523px; }
+}
+/*ALEC*/
+
+
+
 /*ALEC*/
 .alec{
     cursor:pointer;
@@ -150,12 +200,12 @@
 /***COMPU**/
 .compu{
     background-image: url("../images/kids/sprites/compu.png");
-    top: 80px;
     cursor: pointer;
     height: 55px;
-    left: 361px;
+    left: 543px;
     position: absolute;
-    width:55px;
+    top: 171px;
+    width: 55px;
     z-index: 99999999;
 }
 .compumove{
@@ -190,9 +240,58 @@
    from { background-position:    0px 0px; }
      to { background-position: 0px -2200px; }
 }
-/*ATRIL*/
 
 /**COMPU**/
+/**CLAQUETA**/
+/***COMPU**/
+.claqueta{
+  background-image: url("../images/kids/sprites/claqueta.png");
+    cursor: pointer;
+    height: 45px;
+    left: 580px;
+    position: absolute;
+    top: 360px;
+    width: 45px;
+    z-index: 99999999;
+}
+.claquetamove{
+     animation: 1s steps(11, end) 0s normal none infinite playclaq;   
+     -webkit-animation: playclaq 1s steps(11) infinite;
+       -moz-animation:  playclaq 1s steps(11) infinite;
+        -ms-animation:  playclaq 1s steps(11) infinite;
+         -o-animation:  playclaq 1s steps(11) infinite;
+            animation:  playclaq 1s steps(11) infinite;
+}
+@-webkit-keyframes playclaq {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -495px; }
+}
+
+@-moz-keyframes playclaq {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -495px; }
+}
+
+@-ms-keyframes playclaq {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -495px; }
+}
+
+@-o-keyframes playclaq {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -495px; }
+}
+
+@keyframes playclaq {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -495px; }
+}
+
+
+
+/**CLAQUETA**/
+
+
 /*LAMP*/
 .lamp{
       background-image: url("../images/kids/sprites/lamp.png");
@@ -342,7 +441,7 @@
     bottom: 258px;
     cursor: pointer;
     height: 95px;
-    left: 391px;
+    left: 340px;
     position: absolute;
     width: 184px;
     z-index: 99999999;
@@ -438,12 +537,7 @@
     height:650px;
     position:relative;
 }
-#logo-nino{
-  left: 8px;
-    position: absolute;
-    top: 0;
-    z-index: 9999999;
-}
+
 #robot-salir{
  position:absolute;
     left:0;
