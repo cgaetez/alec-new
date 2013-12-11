@@ -425,6 +425,43 @@ left:0;
     top:500px;
     /*background-color:white;  */
 }
+#video-a-dibujar{
+ background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    left: 15%;
+    overflow: auto;
+    position: absolute;
+    top: 10px;
+}
+#video-a-dibujar-app{
+    position:absolute;
+    width:70%;
+    left:15%;
+    top:10px;
+    background-color:white;
+    display:none;
+    border:2px solid grey;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+#video_sketch{
+        background-color:white;
+    border:2px solid grey;
+    -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+    height:400px;
+ /*background-image:url("../kids/videos/video.png");  */
+ background-repeat:no-repeat;
+}
+#vamos-video-a-dibujar{
+    position:absolute;
+    width:40%;
+    left:30%;
+    top:500px;
+    /*background-color:white;  */
+}
 .titulo-historia{
  background-color: #D3D3D3;
     border-radius: 9px;

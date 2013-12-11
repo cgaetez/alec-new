@@ -1,3 +1,4 @@
+<!-- Aplicación que permite dibujar alguna lectura asignada-->
                 <section class="col-md-12" id="contentappkids">
                     <img src="images/kids/alec-salir.png" id="robot-salir"/>
                     <img src="images/kids/objetos-dibujar.png" id="fondo-dibuja" />
@@ -30,6 +31,9 @@
                         
                         <canvas id="colors_sketch" class="all clearfix" height="450"></canvas>
                         <a href="#colors_sketch" data-download="png" style="float: center; width: 100px;">Siguiente</a>
+                        </article>  
+                    
+                </section>
                         <script type="text/javascript">
                             $("#contentappkids").css("background-image","url('images/kids/fondo.jpg')");
 
@@ -48,21 +52,23 @@
                             $("#historia-a-dibujar-app").css("display","block"); 
                                $('#colors_sketch').sketch();
                         
-                        $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
+                        $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000'], function() {
                         $short = this.substring(1,4);
-                        $('#paleta').append("<a href='#colors_sketch' data-color='" + this + "'><img class='colore-paleta' src='images/kids/paleta-"+$short+".png' /></a> ");
+                        $('#paleta').append("<a href='#colors_sketch' data-color='" + this + "'><img class='colore-paleta' src='images/kids/paleta-"+$short+".png' /></a>");  
                       
+                        });                            
+                        $.each([3, 5, 10,11], function() {
+                        if(this != 11){  
+                        $('#paleta').append("<a href='#colors_sketch' data-size='" + this + "'><img class='colore-paleta' src='images/kids/paleta-"+this+".png' /></a>");
+                        }else{
+                            $('#paleta').append("<a href='#colors_sketch' data-color='fff'><img class='colore-paleta' src='images/kids/paleta-fff.png' /></a>");       
+                        }
+                               
+                               
+                        });
+                             
                         });
                             
-                        $.each([3, 5, 10], function() {
-                          $('#paleta').append("<a href='#colors_sketch' data-size='" + this + "'><img class='colore-paleta' src='images/kids/paleta-"+this+".png' /></a> ");
-                        });
-                        });
-                            
-                        $(function() {
-                      
-                        });
+                 
                         </script>
-</article>  
-                    
-                </section>
+
